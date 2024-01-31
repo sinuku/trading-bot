@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt install -y --no-install-recommends \
     sudo \
+    python3-pip \
     git
 
 RUN pip install requests pyyaml
