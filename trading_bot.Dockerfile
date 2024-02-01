@@ -10,6 +10,9 @@ RUN apt-get update && \
 
 RUN pip install requests pyyaml
 
+# create a symlink for python bin
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 COPY . /home/workspace
 WORKDIR /home/workspace
 
